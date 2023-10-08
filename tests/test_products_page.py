@@ -44,7 +44,7 @@ def test_add_product():
 @allure.severity(Severity.NORMAL)
 @allure.title('Открытие страницы с продуктами и удаление продукта из корзины')
 def test_remove_product():
-    with allure.step('Authorization success'):
+    with allure.step('Open main page'):
         main_page.open()
 
     with allure.step('Authorization success'):
@@ -72,7 +72,7 @@ def test_remove_product():
 @allure.severity(Severity.CRITICAL)
 @allure.title('Открытие страницы с продуктами и оформление продукта')
 def test_product_purchase():
-    with allure.step('Authorization success'):
+    with allure.step('Open main page'):
         main_page.open()
 
     with allure.step('Authorization success'):
@@ -84,7 +84,7 @@ def test_product_purchase():
     with allure.step('Open basket'):
         products_page.open_backet()
 
-    with allure.step('Open chekout form'):
+    with allure.step('Open checkout form'):
         products_page.open_order_form()
 
     with allure.step('Open input order form'):
