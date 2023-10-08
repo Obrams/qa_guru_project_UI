@@ -1,4 +1,5 @@
 import allure
+from allure_commons.types import Severity
 
 from pages.main_page import MainPage
 from utils.config import Config
@@ -15,6 +16,11 @@ unccorected_login = Config.uncorrected_username_shop
 unccorected_password = Config.uncorrected_password_shop
 
 
+@allure.feature('Проверка успешной авторизации')
+@allure.label('owner', 'Nikita')
+@allure.tag('web')
+@allure.severity(Severity.CRITICAL)
+@allure.title('Открытие страницы авторизации и проверка авторизации под корректным пользователем')
 def test_authorization_success():
     with allure.step('Open main page'):
         main_page.open()
@@ -29,7 +35,12 @@ def test_authorization_success():
         main_page.logout_shop()
 
 
-def test_authorization_unsuccessful():
+@allure.feature('Проверка авторизации с пустыми полями на форме')
+@allure.label('owner', 'Nikita')
+@allure.tag('web')
+@allure.severity(Severity.NORMAL)
+@allure.title('Открытие страницы авторизации и проверка авторизации с незаполненной формой')
+def test_authorization_with_empty_fields():
     with allure.step('Open main page'):
         main_page.open()
 
@@ -40,6 +51,11 @@ def test_authorization_unsuccessful():
         main_page.check_error_message('Username is required')
 
 
+@allure.feature('Проверка авторизации под заблокированным пользователем')
+@allure.label('owner', 'Nikita')
+@allure.tag('web')
+@allure.severity(Severity.NORMAL)
+@allure.title('Открытие страницы авторизации и проверка авторизации под заблокированным пользователем')
 def test_authorization_lock_user():
     with allure.step('Open main page'):
         main_page.open()
@@ -51,6 +67,11 @@ def test_authorization_lock_user():
         main_page.check_error_message('Sorry, this user has been locked out.')
 
 
+@allure.feature('Проверка авторизации под не корректными данными для авторизации')
+@allure.label('owner', 'Nikita')
+@allure.tag('web')
+@allure.severity(Severity.NORMAL)
+@allure.title('Открытие страницы авторизации и не корректными данными для авторизации')
 def test_authorization_with_invalid_login_password():
     with allure.step('Open main page'):
         main_page.open()

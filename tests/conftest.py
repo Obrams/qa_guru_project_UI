@@ -10,9 +10,9 @@ from utils import allure_helper
 
 import tests
 
-# DEFAULT_BROWSER_VERSION = "100.0"
+DEFAULT_BROWSER_VERSION = "100.0"
 
-"""
+
 def pytest_addoption(parser):
     parser.addoption(
         '--browser_version',
@@ -27,16 +27,15 @@ def path(file_name):
 @pytest.fixture(scope='session', autouse=True)
 def load_env():
     load_dotenv()
-"""
 
 
 @pytest.fixture(scope='function', autouse=True)
-def setup_browser():
+def setup_browser(request):
     browser.config.base_url = 'https://www.saucedemo.com'
 
-    #browser.config.window_width = 1920
-    #browser.config.window_height = 1080
-    """
+    browser.config.window_width = 1920
+    browser.config.window_height = 1080
+
     browser_version = request.config.getoption('--browser_version')
     browser_version = browser_version if browser_version != "" else DEFAULT_BROWSER_VERSION
     options = Options()
@@ -61,9 +60,9 @@ def setup_browser():
 
     yield browser
 
-    attach.add_html(browser)
-    attach.add_screenshot(browser)
-    attach.add_logs(browser)
-    attach.add_video(browser)
-"""
+    allure_helper.add_html(browser)
+    allure_helper.add_screenshot(browser)
+    allure_helper.add_logs(browser)
+    allure_helper.add_video(browser)
+
     browser.quit()
