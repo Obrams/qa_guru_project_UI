@@ -61,5 +61,5 @@ allure serve allure-results
 <img src="images/screenshot/video.gif">
 
 ### <p><img width="3%" title="Telegram" src="images/logo/tg.png"> Telegram</p>
-<p>Настроена отправка отчета в Telegram</p>
+<p>Настроена отправка отчета в <a href='https://t.me/aqa_report_bot'>Telegram</a></p>
 <img title="Telegram_report_screen" src="images/screenshot/telegram.png">
