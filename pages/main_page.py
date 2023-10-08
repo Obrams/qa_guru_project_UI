@@ -18,7 +18,7 @@ class MainPage:
         return self
 
     def logout_shop(self):
-        browser.element('#react-burger-menu-btn').click()
+        browser.element('.bm-burger-button').click()
         browser.element('#logout_sidebar_link').click()
         return self
 

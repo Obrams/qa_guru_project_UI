@@ -5,7 +5,12 @@ class Products_page:
     def add_product_for_basket(self):
         browser.element('#add-to-cart-sauce-labs-backpack').click()
         browser.element('.shopping_cart_badge').should(be.visible)
-        browser.element('#remove-sauce-labs-backpack').click()
+        return self
+
+    def reset_app_state(self):
+        browser.element('[class="bm-burger-button"]').click()
+        browser.element('[id=reset_sidebar_link]').click()
+        browser.element('#logout_sidebar_link').click()
         return self
 
     def open_backet(self):
