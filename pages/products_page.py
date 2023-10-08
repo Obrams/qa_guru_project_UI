@@ -3,7 +3,7 @@ from selene import browser, have, be
 
 class Products_page:
     def add_product_for_basket(self):
-        browser.element('#add-to-cart-sauce-labs-backpack').click()
+        browser.element('[data-test="add-to-cart-sauce-labs-backpack"]').click()
         browser.element('.shopping_cart_badge').should(be.visible)
         return self
 

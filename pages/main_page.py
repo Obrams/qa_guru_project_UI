@@ -13,7 +13,7 @@ class MainPage:
         return self
 
     def check_success_authorization(self):
-        browser.element('.title').should(have.text('Products'))
+        browser.element('[class="title"]').should(have.text('Products'))
         browser.element('.shopping_cart_container').should(be.visible)
         return self
 
