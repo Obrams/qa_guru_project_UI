@@ -31,7 +31,7 @@ def test_authorization_success():
     with allure.step('Authorization success'):
         main_page.check_success_authorization()
 
-    with allure.step('Authorization success'):
+    with allure.step('Logout from shop'):
         main_page.logout_shop()
 
 

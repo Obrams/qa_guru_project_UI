@@ -34,6 +34,9 @@ def test_add_product():
         products_page.check_success_add_product('Sauce Labs Backpack',
                                                 '29.99')
 
+    with allure.step('Logout from shop'):
+        main_page.logout_shop()
+
 
 @allure.feature('Проверка удаления продукта из корзины')
 @allure.label('owner', 'Nikita')
@@ -58,6 +61,9 @@ def test_remove_product():
 
     with allure.step('Check basket after remove product'):
         products_page.check_after_remove_product()
+
+    with allure.step('Logout from shop'):
+        main_page.logout_shop()
 
 
 @allure.feature('Проверка полного пути оформления продукта')
@@ -96,3 +102,7 @@ def test_product_purchase():
 
     with allure.step('Return home page'):
         products_page.return_back_home()
+
+    with allure.step('Logout from shop'):
+        main_page.logout_shop()
+
