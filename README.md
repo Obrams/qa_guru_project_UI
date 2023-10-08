@@ -43,6 +43,12 @@ pytest .
 Нажмите кнопку «Собрать сейчас»
 <p><img src="images/screenshot/jenkins_job.png"></p>
 
+Для удалённого запуска API-тестов, в разделе **Сборка**, необходимо добавить шаг по созданию/изменению .env-файла с данными вашей учетной записи сервиса <code>www.saucedemo.com</code>(**username_shop**, **password_shop**, **block_username_shop**, **block_password_shop**, **uncorrected_username_shop**, **uncorrected_password_shop**).
+
+Пример файла <code>.env</code> в Jenkins
+
+<img width="50%" src="images/screenshot/env.png"/>
+
 ### <img width="3%" title="Allure Report" src="images/logo/allure_report.png"> Отчетность о прохождении тестов в Allure
 #### Если тест запускался локально:
 Введите в терминале команду 
