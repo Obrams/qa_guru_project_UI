@@ -47,7 +47,7 @@ pytest .
 
 Пример файла <code>.env</code> в [Jenkins](https://jenkins.autotests.cloud/job/Ozerov_qa_quru_project_UI/configure)
 
-<img width="50%" src="images/screenshot/env.png"/>
+<img width="50%" src="images/screenshot/env.jpg"/>
 
 ### <img width="3%" title="Allure Report" src="images/logo/allure_report.png"> Отчетность о прохождении тестов в Allure
 #### Если тест запускался локально:
