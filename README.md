@@ -45,7 +45,7 @@ pytest .
 
 Для удалённого запуска API-тестов, в разделе **Сборка**, необходимо добавить шаг по созданию/изменению .env-файла с данными вашей учетной записи сервиса <code>www.saucedemo.com</code>(**username_shop**, **password_shop**, **block_username_shop**, **block_password_shop**, **uncorrected_username_shop**, **uncorrected_password_shop**).
 
-Пример файла <code>.env</code> в Jenkins
+Пример файла <code>.env</code> в [Jenkins](https://jenkins.autotests.cloud/job/Ozerov_qa_quru_project_UI/configure)
 
 <img width="50%" src="images/screenshot/env.png"/>
 
