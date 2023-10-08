@@ -41,7 +41,7 @@ pytest .
 
 ### Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/Ozerov_qa_quru_project_UI)
 Нажмите кнопку «Собрать сейчас»
-<p><img src="images/screenschot/jenkins_job.png"></p>
+<p><img src="images/screenshot/jenkins_job.png"></p>
 
 ### <img width="3%" title="Allure Report" src="images/logo/allure_report.png"> Отчетность о прохождении тестов в Allure
 #### Если тест запускался локально:
@@ -51,15 +51,15 @@ allure serve allure-results
 ``` 
 #### Если тест запускался в Jenkins
 Нажмите Allure Report или кликните по иконке отчёта в завершённой сборке
-<p><img title="Jenkins_Allure" src="images/screenschot/jenkins_allure.png"></p>
+<p><img title="Jenkins_Allure" src="images/screenshot/jenkins_allure.png"></p>
 
 ### Примеры отображения тестов
-<img title="Allure_Report" src="images/screenschot/Allure Report0.png">
-<img title="Allure_Example_Report" src="images/screenschot/Allure Report.png">
+<img title="Allure_Report" src="images/screenshot/Allure Report0.png">
+<img title="Allure_Example_Report" src="images/screenshot/Allure Report.png">
 
 #### Так же в отчетах для каждого UI-теста прикрепляется видео
-<img src="images/screenschot/video.gif">
+<img src="images/screenshot/video.gif">
 
 ### <p><img width="3%" title="Telegram" src="images/logo/tg.png"> Telegram</p>
 <p>Настроена отправка отчета в Telegram</p>
-<img title="Telegram_report_screen" src="images/screenschot/telegram.png">
+<img title="Telegram_report_screen" src="images/screenshot/telegram.png">
